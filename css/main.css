@@ -1,0 +1,112 @@
+/*body {
+  background-color: rgb(71, 71, 53);
+} /*.is-hidden {
+  visibility: inherit;
+  opacity: 0;
+  pointer-events: none;
+  transition-property: opacity;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--timing-function);
+}*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: rgba(32, 13, 29, 0.6);
+backdrop-filter: blur(3px);
+  z-index: 150;
+}
+
+.modal {
+  position: absolute;
+  max-width: 930px;
+  width: 100%;
+  height: 1023px;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  
+  border-radius: 300px 0px;
+  background-color: #FFF2FD;
+
+
+  transition-duration: var(--transition-time);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+   
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    
+  }
+}
+.modal__position{
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal__author-img{
+  display: block;
+  width: 132px;
+  height: 132px;
+  background-image: url(/images/pic_circle.png);
+}
+
+/*.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-light-color);
+  transition-property: fill;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--timing-function);
+  z-index: 20;
+}
+
+.modal__btn-close:hover .modal__icon,
+.modal__btn-close:focus .modal__icon {
+  fill: var(--main-accent-color);
+}
+
+.modal__icon,
+.form__icon {
+  fill: #000000;
+}
+
+.is-hidden .modal {
+  transform: scale(0);
+}
+
+.modal__title {
+  font-weight: var(--primary--font-weight);
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
+
+.modal__button {
+  position: relative;
+  padding: 10px 55px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}

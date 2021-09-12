@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <p>
+      Вёрстка — монтаж полос оригинал-макета из составных элементов: набранного
+      текста, заголовков, таблиц, иллюстраций, украшений и пр. Также результат
+      этого процесса, то есть готовые полосы. Эта операция включает в себя
+      формирование книжных, журнальных или газетных полос определенного формата.
+    </p>
+    <button class="button banner__button" type="button" data-modal-open>
+      Заказать услугу
+    </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-modal-close>X</button>
+        <div class="modal__author-img"></div>
+        <div class="modal__position">
+          <div class="modal__poster-container">
+            <img
+              class="modal__poster-img"
+              src="/images/pic.png"
+              alt=""
+              width="360"
+            />
+          </div>
+          <div class="modal__info-container">
+            <ul class="list">
+              <li>
+                <span>Info</span>
+                <p></p>
+              </li>
+              <li>
+                <span>When</span>
+                <p></p>
+              </li>
+              <li>
+                <span>Where</span>
+                <p></p>
+              </li>
+              <li>
+                <span>Who</span>
+                <p></p>
+              </li>
+              <li>
+                <span>Prices</span>
+                <p></p>
+                <button>Buy tickets</button>
+                <p></p>
+                <button>Buy tickets</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button>More from this author</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
