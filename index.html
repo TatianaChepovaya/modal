@@ -15,8 +15,9 @@
       формирование книжных, журнальных или газетных полос определенного формата.
     </p>
     <button class="button banner__button" type="button" data-modal-open>
-      Заказать услугу
+      Детали
     </button>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn-close" data-modal-close>X</button>
@@ -24,10 +25,10 @@
         <div class="modal__position">
           <div class="modal__poster-container">
             <img
-              class="modal__poster-img"
+              class="modal__poster-img visually-hidden"
               src="/images/pic.png"
               alt=""
-              width="360"
+              width="233"
             />
           </div>
           <div class="modal__info">
@@ -55,14 +56,16 @@
               <li>
                 <span class="modal__info-title">Prices</span>
                 <p class="modal__info-text"></p>
-                <button class="modal__btn-buy">Buy tickets</button>
+                <button class="modal__btn modal__btn-buy">Buy tickets</button>
                 <p class="modal__info-text"></p>
-                <button class="modal__btn-buy">Buy tickets</button>
+                <button class="modal__btn modal__btn-buy">Buy tickets</button>
               </li>
             </ul>
           </div>
         </div>
-        <button>More from this author</button>
+        <button class="modal__btn modal__btn-more">
+          More from this author
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
